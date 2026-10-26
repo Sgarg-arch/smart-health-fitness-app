@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fitness_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Smart Health &amp; Fitness"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/textDashboardGreeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome!"
+            android:textColor="#E6FFFB"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_white_card"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TODAY'S GOAL"
+                android:textColor="#0F766E"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/textDashboardGoal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Goal: 0 steps"
+                android:textColor="#1F2937"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btnEditGoal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change Daily Goal"
+                android:background="@drawable/bg_primary_button"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="14dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_white_card"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="YOUR MOVEMENT"
+                android:textColor="#0F766E"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/textStepCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0 Steps"
+                android:textColor="#1F2937"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/textDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Activity time: 0 minutes"
+                android:textColor="#4B5563"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_marginTop="6dp" />
+
+            <TextView
+                android:id="@+id/textSensorStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ready when you are."
+                android:textColor="#4B5563"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/btnStartMonitoring"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start Activity Monitoring"
+                android:background="@drawable/bg_primary_button"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="14dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSaveActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Today's Activity"
+            android:background="@drawable/bg_primary_button"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnViewRecords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Previous Records"
+            android:background="@drawable/bg_primary_button"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>
